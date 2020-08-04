@@ -13,6 +13,10 @@ $header-height: 300px;
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $primary-color;
   color: set-text-colour($primary-color);
@@ -23,10 +27,15 @@ body {
   color: white;
   height: $header-height;
   margin-bottom: 30px;
+  padding: 0 2rem;
 
   h1 {
     margin: 0;
     padding-top: 30px;
+  }
+
+  .contact {
+    background-color: $primary-color;
   }
 }
 
@@ -50,6 +59,10 @@ body {
 
   .footer-copyright {
     background: $secondary-color-light;
+  }
+
+  .social {
+    padding: 0 0.5rem;
   }
 }
 

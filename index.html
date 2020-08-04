@@ -25,42 +25,36 @@
 
   <body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" id="home">
       <nav class="transparent z-depth-0">
-        <div class="nav-wrapper">
-          <a
-            href="#"
-            data-activates="mobile-nav"
-            class="button-collapse show-on-large"
+        <div>
+          <a href="#home" class="brand-logo">wild.leveret</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse"
             ><i class="material-icons">menu</i></a
           >
-
-          <a href="index.html" class="brand-logo">wild.leveret</a>
-
           <ul class="right hide-on-med-and-down">
-            <li class="active">
-              <a href="index.html">UI</a>
-            </li>
+            <li><a href="#home">UI</a></li>
+            <li><a href="apps.html">Apps</a></li>
             <li>
-              <a href="javascript.html">JavaScript</a>
+              <a
+                class="contact btn btn-flat white-text waves-effect waves-light"
+                href="#contact"
+                >Contact</a
+              >
             </li>
+          </ul>
+          <ul class="side-nav center" id="mobile-demo">
+            <li><a href="#home">UI</a></li>
+            <li><a href="apps.html">Apps</a></li>
             <li>
-              <a href="apps.html">React</a>
+              <a
+                class="contact btn btn-flat white-text waves-effect waves-light"
+                href="#contact"
+                >Contact</a
+              >
             </li>
           </ul>
         </div>
-
-        <ul class="side-nav" id="mobile-nav">
-          <li>
-            <a href="index.html">UI</a>
-          </li>
-          <li>
-            <a href="javascript.html">JavaScript</a>
-          </li>
-          <li>
-            <a href="apps.html">React</a>
-          </li>
-        </ul>
       </nav>
       <h1 class="center">Software Development</h1>
       <h4 class="center">Fullstack</h4>
@@ -277,25 +271,48 @@
     <footer class="page-footer">
       <div class="container">
         <div class="row">
-          <div class="col l6 s12">
+          <div class="col m3 s12">
             <h5 class="white-text">About</h5>
             <p class="grey-text text-lighten-4">
               Fullstack web development. Experience with JavaScript, React,
               MongoDB, Express, Node.js, Boostrap, C++, JSX
             </p>
           </div>
-          <div class="col l4 offset-l2 s12">
+
+          <form id="contact" class="col m6 s12">
+            <h5 class="white-text">Contact us:</h5>
+            <div class="row">
+              <div class="input-field">
+                <input id="prefix" type="text" class="validate" />
+                <label for="prefix">Name</label>
+              </div>
+              <div class="input-field">
+                <input id="email" type="email" class="validate" />
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <textarea id="message" class="materialize-textarea"></textarea>
+                <label for="message">Message</label>
+              </div>
+              <button
+                class="right btn waves-effect waves-light btn-block"
+                type="submit"
+                name="action"
+              >
+                Send
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+          <div class="col m3 s12 right-align">
             <h5 class="white-text">Links</h5>
             <ul>
               <li>
-                <a class="grey-text text-lighten-3" href="index.html">UI</a>
+                <a class="grey-text text-lighten-3" href="#home">UI</a>
               </li>
               <li>
-                <a class="grey-text text-lighten-3" href="javascript"
-                  >JavaScript</a
-                >
+                <a class="grey-text text-lighten-3" href="apps.html">Apps</a>
               </li>
-              <li><a class="grey-text text-lighten-3" href="apps">React</a></li>
             </ul>
           </div>
         </div>
@@ -305,14 +322,14 @@
           © 2020 wild.leveret
           <div class="right">
             <a
-              class="grey-text text-lighten-4"
+              class="grey-text text-lighten-4 social"
               href="https://github.com/sara-gray"
-              ><i class="fab fa-github"></i>
+              ><i class="fab fa-github fa-2x"></i>
             </a>
             <a
-              class="grey-text text-lighten-4"
+              class="grey-text text-lighten-4 social"
               href="https://www.linkedin.com/in/wildleveret/"
-              ><i class="fab fa-linkedin-in"></i>
+              ><i class="fab fa-linkedin-in fa-2x"></i>
             </a>
           </div>
         </div>
@@ -481,7 +498,8 @@
           </div>
           <div class="col s12 m4">
             <p class="deep-purple-text darken-4 flow-text">
-              Simple, clean UI showing features including testimonials and a photo gallery.
+              Simple, clean UI showing features including testimonials and a
+              photo gallery.
             </p>
           </div>
         </div>
@@ -504,7 +522,11 @@
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
       $(document).ready(function () {
-        $('.button-collapse').sideNav();
+        $('.button-collapse').sideNav({
+          menuWidth: 200,
+          closeOnClick: true,
+          draggable: true,
+        });
         $('.modal').modal();
 
         const options = [

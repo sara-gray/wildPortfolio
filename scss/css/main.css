@@ -9361,10 +9361,6 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   /*shape-rendering: crispEdges;*/
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: #512da8;
   color: white;
@@ -9375,16 +9371,13 @@ body {
   color: white;
   height: 300px;
   margin-bottom: 30px;
-  padding: 0 2rem;
+  padding: 0 5rem;
+  border: 2px red solid;
 }
 
 .main-header h1 {
   margin: 0;
   padding-top: 30px;
-}
-
-.main-header .contact {
-  background-color: #512da8;
 }
 
 .img-content {
@@ -9415,10 +9408,6 @@ body {
 
 .page-footer .footer-copyright {
   background: #424242;
-}
-
-.page-footer .social {
-  padding: 0 0.5rem;
 }
 
 .modal {
