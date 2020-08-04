@@ -63,7 +63,7 @@
     <!-- Section: Main -->
     <section class="section section-main">
       <div class="container">
-        <div class="row row-1">
+        <div class="row row-1 row_spacer">
           <div class="col m6 hide-on-small-only">
             <div class="img-content right">
               <h3>Emmens</h3>
@@ -73,7 +73,7 @@
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/abstract1.jpg" alt="" />
+                <img src="img/gallery/emmens.jpg" alt="" />
                 <span class="card-title">Emmens</span>
                 <a
                   href="#abstract1"
@@ -101,11 +101,11 @@
           </div>
         </div>
 
-        <div class="row row-2">
+        <div class="row row-2 row-spacer">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/abstract2.jpg" alt="" />
+                <img src="img/gallery/cloudteach.jpg" alt="" />
                 <span class="card-title">CloudTeach</span>
                 <a
                   href="#abstract2"
@@ -136,7 +136,7 @@
           </div>
         </div>
 
-        <div class="row row-3">
+        <div class="row row-3 row-spacer">
           <div class="col m6 hide-on-small-only">
             <div class="img-content right">
               <h3>The Shelf Admin</h3>
@@ -146,7 +146,7 @@
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/abstract3.jpg" alt="" />
+                <img src="img/gallery/shelf.jpg" alt="" />
                 <span class="card-title">The Shelf Admin</span>
                 <a
                   href="#abstract3"
@@ -170,11 +170,11 @@
           </div>
         </div>
 
-        <div class="row row-4">
+        <div class="row row-4 row-spacer">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/abstract4.jpg" alt="" />
+                <img src="img/gallery/lucianadjoe.jpg" alt="" />
                 <span class="card-title">Lucía & Joe</span>
                 <a
                   href="#abstract4"
@@ -201,7 +201,7 @@
           </div>
         </div>
 
-        <div class="row row-5">
+        <div class="row row-5 row-spacer">
           <div class="col m6 hide-on-small-only">
             <div class="img-content right">
               <h3>The Sowerby Wedding</h3>
@@ -212,7 +212,7 @@
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/abstract5.jpg" alt="" />
+                <img src="img/gallery/eveanddavid.jpg" alt="" />
                 <span class="card-title">The Sowerby Wedding</span>
                 <a
                   href="#abstract5"
@@ -232,11 +232,11 @@
           </div>
         </div>
 
-        <div class="row row-6">
+        <div class="row row-6 row-spacer">
           <div class="col m6">
             <div class="card">
               <div class="card-image">
-                <img src="img/gallery/abstract6.jpg" alt="" />
+                <img src="img/gallery/heritage.jpg" alt="" />
                 <span class="card-title">Heritage Railways</span>
                 <a
                   href="#abstract6"
@@ -342,11 +342,7 @@
         <h4>Emmens</h4>
         <div class="row">
           <div class="col s12 m8">
-            <img
-              src="img/gallery/abstract1.jpg"
-              alt=""
-              class="responsive-img"
-            />
+            <img src="img/gallery/emmens.jpg" alt="" class="responsive-img" />
           </div>
           <div class="col s12 m4">
             <p class="deep-purple-text darken-4 flow-text">
@@ -379,7 +375,7 @@
           </div>
           <div class="col s12 m8">
             <img
-              src="img/gallery/abstract2.jpg"
+              src="img/gallery/cloudteach.jpg"
               alt=""
               class="responsive-img"
             />
@@ -407,11 +403,7 @@
             </p>
           </div>
           <div class="col s12 m8">
-            <img
-              src="img/gallery/abstract3.jpg"
-              alt=""
-              class="responsive-img"
-            />
+            <img src="img/gallery/shelf.jpg" alt="" class="responsive-img" />
           </div>
         </div>
       </div>
@@ -432,7 +424,7 @@
         <div class="row">
           <div class="col s12 m8">
             <img
-              src="img/gallery/abstract4.jpg"
+              src="img/gallery/lucianadjoe.jpg"
               alt=""
               class="responsive-img"
             />
@@ -458,7 +450,7 @@
     <!-- Modal 5 -->
     <div id="abstract5" class="modal center">
       <div class="modal-content">
-        <h4>CloudTeach</h4>
+        <h4>The Sowerby Wedding</h4>
         <div class="row">
           <div class="col s12 m4">
             <p class="deep-purple-text darken-4 flow-text">
@@ -467,7 +459,7 @@
           </div>
           <div class="col s12 m8">
             <img
-              src="img/gallery/abstract5.jpg"
+              src="img/gallery/eveanddavid.jpg"
               alt=""
               class="responsive-img"
             />
@@ -490,11 +482,7 @@
         <h4>Heritage Railways</h4>
         <div class="row">
           <div class="col s12 m8">
-            <img
-              src="img/gallery/abstract6.jpg"
-              alt=""
-              class="responsive-img"
-            />
+            <img src="img/gallery/heritage.jpg" alt="" class="responsive-img" />
           </div>
           <div class="col s12 m4">
             <p class="deep-purple-text darken-4 flow-text">
@@ -539,35 +527,35 @@
           },
           {
             selector: '.row-2',
-            offset: 300,
+            offset: 200,
             callback: function (el) {
               Materialize.fadeInImage($(el));
             },
           },
           {
             selector: '.row-3',
-            offset: 340,
+            offset: 230,
             callback: function (el) {
               Materialize.fadeInImage($(el));
             },
           },
           {
             selector: '.row-4',
-            offset: 380,
+            offset: 260,
             callback: function (el) {
               Materialize.fadeInImage($(el));
             },
           },
           {
             selector: '.row-5',
-            offset: 430,
+            offset: 290,
             callback: function (el) {
               Materialize.fadeInImage($(el));
             },
           },
           {
             selector: '.row-6',
-            offset: 470,
+            offset: 320,
             callback: function (el) {
               Materialize.fadeInImage($(el));
             },
