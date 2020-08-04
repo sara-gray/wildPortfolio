@@ -57,6 +57,10 @@ body {
 .page-footer {
   background: $secondary-color;
 
+  .hidden {
+    display: none;
+  }
+
   .footer-copyright {
     background: $secondary-color-light;
   }

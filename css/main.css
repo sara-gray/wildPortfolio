@@ -9413,6 +9413,10 @@ body {
   background: #212121;
 }
 
+.page-footer .hidden {
+  display: none;
+}
+
 .page-footer .footer-copyright {
   background: #424242;
 }
